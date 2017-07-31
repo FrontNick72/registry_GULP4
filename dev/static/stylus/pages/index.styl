@@ -1,0 +1,64 @@
+.breadcrumbs 
+  &__item 
+    font-family Roboto
+    color #6e6e6e
+    display inline-block
+    font-size rem(13)
+    font-weight 400
+    line-height rem(18)
+    &:last-child
+      &:after 
+        content ""
+    &:after
+      content "•"
+      position relative
+      color #999
+      line-height rem(18)
+      font-size rem(15)
+      margin 0 10px
+      bottom -1px
+      
+.news 
+  float left
+  width rem(770)
+ 
+.menu 
+  float right
+  display flex
+  flex-wrap wrap
+  justify-content space-around
+  width rem(372)
+  &__item 
+    background-color #355aa8
+    display block
+    margin 0 2px 2px 0
+    text-align center
+    size(184px,166px)
+    &:nth-child(odd)
+      background-image url('../img/general/down.png')
+      background-repeat no-repeat
+      background-size cover
+      background-position-x -30px
+      &:hover
+        background-image none
+    &:nth-child(even)
+      background-image url('../img/general/up.png')
+      background-repeat no-repeat
+      background-size cover
+      background-position-x -30px
+      &:hover
+        background-image none
+    .icon
+      size(rem(58))
+      margin: 40px 0 18px 0
+      fill #fff  
+    .menu__title 
+      font-family: RobotoSlab;
+      color:  #ffffff;
+      font-size: rem(15.98);
+      font-weight: 700;
+      line-height: 18px;
+      transform: scaleY(1.0014);
+
+      
+      

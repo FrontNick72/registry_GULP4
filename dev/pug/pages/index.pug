@@ -1,0 +1,43 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Registry'
+
+block content
+  .container
+    +breadcrumbs('Главная', 'Реестры')(class = "breadcrumbs_main")
+    section.news
+      article.registry
+        .txt
+        a.link(href="")
+      article.registry
+        .txt
+        a.link(href="")
+      article.registry
+        .txt
+        a.link(href="")
+      article.registry
+        .txt
+        a.link(href="")
+      article.registry
+        .txt
+        a.link(href="")
+    nav.menu
+      a(href="#").menu__item
+        +icon('badge')
+        .menu__title Конкурсы
+      a(href="#").menu__item
+        +icon('coins')
+        .menu__title Конкурсы
+      a(href="#").menu__item
+        +icon('check')
+        .menu__title Конкурсы
+      a(href="#").menu__item
+        +icon('man')
+        .menu__title Конкурсы
+      a(href="#").menu__item
+        +icon('list')
+        .menu__title Конкурсы
+      a(href="#").menu__item
+        +icon('communication')
+        .menu__title Конкурсы

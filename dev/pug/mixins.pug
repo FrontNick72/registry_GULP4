@@ -1,0 +1,11 @@
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="/static/img/svg/symbol/sprite.svg#" + name)
+
+mixin breadcrumbs(...names)
+	ul.breadcrumbs&attributes(attributes)
+		each name in names 
+			li.breadcrumbs__item
+				a(href="#")=name
+
