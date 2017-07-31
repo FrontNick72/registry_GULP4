@@ -21,13 +21,17 @@
 .news 
   float left
   width rem(770)
- 
+
+.sidebar 
+  float right
+  width rem(372)
+  
 .menu 
   float right
   display flex
   flex-wrap wrap
   justify-content space-around
-  width rem(372)
+  width 100%
   &__item 
     background-color #355aa8
     display block
@@ -53,12 +57,48 @@
       margin: 40px 0 18px 0
       fill #fff  
     .menu__title 
-      font-family: RobotoSlab;
-      color:  #ffffff;
-      font-size: rem(15.98);
-      font-weight: 700;
-      line-height: 18px;
-      transform: scaleY(1.0014);
+      font-family RobotoSlab
+      color #fff
+      font-size rem(15.98)
+      font-weight 700
+      line-height 18px
+      transform scaleY(1.0014)
+
+.institutes
+  background #fff
+  margin-top rem(31)
+  width 100%
+  &__title
+    border-bottom 1px solid #eeedee
+    font-family RobotoSlab
+    color #333
+    font-size: 18px
+    font-weight 700
+    line-height 66px
+    text-align center
+    width 100%
+  &__item 
+    display block
+    float left
+    box-sizing border-box
+    margin 7px 0
+    text-align center    
+    width 50%
+    &:first-child
+      border-right 1px solid #eeedee
+    &:last-child
+      border-top 1px solid #eeedee
+  &__logo
+    float left
+  &__name
+    float left
+    padding 0 23px 0 8px
+    font-family Roboto
+    color #333
+    font-size 13px
+    font-weight 500
+    line-height 16px
+    transform scaleX(1.0007)
 
       
       

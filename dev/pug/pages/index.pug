@@ -22,22 +22,35 @@ block content
       article.registry
         .txt
         a.link(href="")
-    nav.menu
-      a(href="#").menu__item
-        +icon('badge')
-        .menu__title Конкурсы
-      a(href="#").menu__item
-        +icon('coins')
-        .menu__title Конкурсы
-      a(href="#").menu__item
-        +icon('check')
-        .menu__title Конкурсы
-      a(href="#").menu__item
-        +icon('man')
-        .menu__title Конкурсы
-      a(href="#").menu__item
-        +icon('list')
-        .menu__title Конкурсы
-      a(href="#").menu__item
-        +icon('communication')
-        .menu__title Конкурсы
+    .sidebar
+      .menu
+        a(href="#").menu__item
+          +icon('badge')
+          .menu__title Конкурсы
+        a(href="#").menu__item
+          +icon('coins')
+          .menu__title Конкурсы
+        a(href="#").menu__item
+          +icon('check')
+          .menu__title Конкурсы
+        a(href="#").menu__item
+          +icon('man')
+          .menu__title Конкурсы
+        a(href="#").menu__item
+          +icon('list')
+          .menu__title Конкурсы
+        a(href="#").menu__item
+          +icon('communication')
+          .menu__title Конкурсы
+      .institutes
+        .institutes__title Подведомственные учреждения
+        a(href="#").institutes__item
+          img.institutes__logo(src = "../static/img/general/technopark.png")
+          span.institutes__name Технопарк "Ямал"
+        a(href="#").institutes__item
+          img.institutes__logo(src = "../static/img/general/centr.png")            
+          span.institutes__name Центр реабилитации
+        a(href="#").institutes__item
+          img.institutes__logo(src = "../static/img/general/Arctica.png")
+          span.institutes__name Центр изучения арктики
+        .clr
